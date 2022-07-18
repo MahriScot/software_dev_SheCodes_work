@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scottish Folklore</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(17, 151, 147) 11.2%,
+          rgb(154, 214, 212) 55.4%,
+          rgb(255, 233, 171) 100.2%
+        );
+      }
+      h1,
+      h2 {
+        text-align: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      h1 {
+        color: #2f5d62;
+        padding: 0 10px;
+        font-size: 30px;
+      }
+      h2 {
+        color: #346751;
+        border: 2px solid #346751;
+        border-radius: 4px;
+        margin: 20px auto;
+        line-height: 1.5;
+        padding: 0px 30px;
+        font-size: 25px;
+      }
+
+      img {
+        border-radius: 70px;
+        display: block;
+        margin: 0 auto;
+        width: 500px;
+        max-width: 90%;
+        padding: 10px 30px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+      a {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      button {
+        padding: 10px 30px;
+        margin: 15px auto;
+        display: block;
+        border-radius: 4px;
+        border-style: none;
+        color: #a7c4bc;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #2f5d62;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        color: #2f5d62;
+        background-color: #a7c4bc;
+        border-style: solid;
+        border-color: #2f5d62;
+        border-style: none;
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .findOutMore {
+        text-decoration: none;
+        color: #d45d79;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 13px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px 50px;
+      }
+      .me {
+        color: #02475e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Scottish Myths & Legends</h1>
+      <h2>Selkies</h2>
+
+      <p>
+        In Celtic and Norse mythology, selkies or selkie folk (Scots: selkie
+        fowk) meaning <strong><em>'seal folk'</em></strong> are mythological
+        beings capable of therianthropy, changing from seal to human form by
+        shedding their skin. They are found in folktales and mythology
+        originating from the Northern Isles of Scotland.
+      </p>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/019/438/original/selkie-girl.jpg?1634828545"
+        alt="Selkie Girl"
+      />
+      <hr />
+      <p>
+        The folk-tales frequently revolve around female selkies being coerced
+        into relationships with humans by someone stealing and hiding their
+        sealskin.
+      </p>
+      <a
+        class="findOutMore"
+        href="http://www.orkneyjar.com/folklore/selkiefolk/"
+        target="_blank"
+        >Find out more about the selkie-folk of Orkney, Scotland</a
+      >
+
+      <br />
+      <button>🧐 Enquire about a tour of Orkney</button>
+      <p class="footer">
+        This page was coded by <span class="me">Mahri Stewart</span>🌄
+      </p>
+    </div>
+    <script>
+      function enquireButton() {
+        let name = prompt("What is your first name?");
+        let age = prompt("How old are you in years?");
+
+        if (age >= 18) {
+          let email = prompt("What is your email address?");
+          alert(
+            `Hi, ${name}! We look forward to welcoming you. We will be in touch soon 🐲`
+          );
+        } else {
+          alert(
+            `Hi, ${name}! So sorry, but you are too young to come on tour 🐲`
+          );
+        }
+      }
+      let tourEnquiry = document.querySelector("button");
+      tourEnquiry.addEventListener("click", enquireButton);
+    </script>
+  </body>
+</html>

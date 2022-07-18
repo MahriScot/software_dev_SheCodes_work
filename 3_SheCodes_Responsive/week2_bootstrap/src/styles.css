@@ -1,0 +1,44 @@
+.center {
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.highlight-yellow {
+  background: yellow;
+  padding: 10px;
+}
+
+.bg-yellow {
+  background: yellow;
+}
+
+.bg-yellow {
+  background: yellow;
+}
+.shadow {
+  box-shadow: 40px 40px;
+}
+.full-width {
+  display: block;
+  text-align: center;
+}
+
+.shadow-xl {
+  box-shadow: 20px 20px grey;
+}
+
+.woman {
+  width: 50%;
+  height: auto;
+}
+
+.logo {
+  max-width: 130px;
+}
+
+.navbar-logo {
+  max-width: 130px;
+}

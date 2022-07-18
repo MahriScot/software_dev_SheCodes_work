@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+a {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+  padding: 10px 0 0 0;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.links a {
+  border: 1px solid var(--primary-color);
+  padding: 20px 10px;
+  margin: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.contact-me {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+}
+
+.about-me {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+}
+
+.about-me-writing {
+  display: flex;
+  margin: 20px 0;
+}
+
+.about-me-writing p {
+  margin: 10px;
+}
+
+#contact {
+  text-align: center;
+}
+
+.my-email {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.my-email:hover {
+  cursor: pointer;
+}

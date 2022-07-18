@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --primary-color-of-website: blueviolet;
+        --box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+        --border: 1px solid seagreen;
+      }
+
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      h2 {
+        color: var(--primary-color-of-website);
+        box-shadow: var(--box-shadow);
+        border: var(--border);
+      }
+
+      h3 {
+        border: 1px solid var(--primary-color-of-website);
+      }
+
+      p {
+        background: var(--primary-color-of-website);
+        color: white;
+        box-shadow: var(--box-shadow);
+      }
+
+      .cities {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        justify-content: space-evenly;
+      }
+      /* could have used margin: 0 20px; could add space to span this way^*/
+
+      .city {
+        border: 1px solid black;
+        padding: 20px 10px;
+        /* width: 33.3% not great if you are adding in new cities, so use flex = 1*/
+        flex: 1;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Porfolio</h1>
+    <a href="about.html">About me</a>
+    <br />
+    <a href="work.html">My Work</a>
+    <br />
+    <a href="blog/thailand-trip.html"> My trip to Thailand</a>
+    <br />
+    <a href="#important"> This is the link to the important part</a>
+    <br />
+    <a href="about.html#faq-here">Link to FAQ in "about me"</a>
+    <br />
+    You can<a href="mailto:mahristewart@hotmail.co.uk">
+      email me at: mahristew@hot.co</a
+    >
+    <br />
+    <br />
+    might be better not to have email as a link though as it annoyingly opens
+    the computer's prefered mail option
+
+    <a href="https://www.ft.com"
+      >link to Financial times will be a diff colour as not visited</a
+    >
+    <h2>my website colours example</h2>
+    <h3>contact me by email colours example</h3>
+    <h3>contact me by phone colours example</h3>
+    <p>playing with primary colours</p>
+    <br />
+    <h3>Flexbox</h3>
+    <div>Paris</div>
+    <div>Bangkok</div>
+    <div>San Francisco</div>
+    <div>Lisbon</div>
+    <br />
+    <div class="cities">
+      <span>Paris</span>
+      <span>Bangkok</span>
+      <span>San Francisco</span>
+      <span>Lisbon</span>
+    </div>
+    <div class="cities">
+      <span class="city">Paris</span>
+      <span class="city">Bangkok</span>
+      <span class="city">San Francisco</span>
+      <span class="city">Lisbon</span>
+    </div>
+    <h4>not important</h4>
+    <h4>not important</h4>
+    <h4>not important</h4>
+    <h4>not important</h4>
+    <h4>not important</h4>
+    <h4>not important</h4>
+    <h4>not important</h4>
+    <h4>not important</h4>
+    <h4>not important</h4>
+    <h2 id="important">This is important</h2>
+    <h4>not important</h4>
+    <h4>not important</h4>
+    <h4>not important</h4>
+  </body>
+</html>

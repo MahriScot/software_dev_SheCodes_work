@@ -1,0 +1,88 @@
+body {
+  color: #323653;
+  font-family: "Roboto", sans-serif;
+  padding-top: 10px;
+}
+h1 {
+  color: #323653;
+  text-align: center;
+}
+
+button {
+  border-radius: 5px;
+  color: #323653;
+  background-color: #d9d7f1;
+  border: 1px solid #323653;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  border-style: solid;
+  cursor: pointer;
+  color: #d9d7f1;
+  background-color: #323653;
+}
+h2 {
+  margin: 0 auto;
+  color: #323653;
+  padding: 0 0 10px;
+}
+
+li {
+  list-style: none;
+  margin: 0 auto;
+}
+
+h5 {
+  margin: 0 auto;
+  color: #323653;
+  padding: 0 0 10px;
+}
+
+.app {
+  border: 2px solid #323653;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input-city {
+  border-radius: 20px;
+  border: 1.5px solid #323653;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.weather-right-now {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.date-and-time {
+  text-align: left;
+}
+.weather-symbol {
+  font-size: 50px;
+}
+
+.today-breakdown {
+  color: #323653;
+  text-align: center;
+}
+
+.the-future {
+  color: #323653;
+  text-align: center;
+}
+
+.temperature {
+  font-size: 18px;
+}
+.units {
+  font-size: 12px;
+  vertical-align: super;
+}
+.description {
+  font-size: 12px;
+}

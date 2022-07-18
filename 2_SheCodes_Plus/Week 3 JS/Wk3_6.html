@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wk3_6</title>
+  </head>
+  <body>
+    <script>
+      let weather = {
+        temperature: "temp",
+        humidity: "humid",
+        windSpeed: "windS",
+      };
+      console.log(weather);
+      console.log(weather.temperature);
+      console.log(weather.humidity);
+      console.log(weather.windSpeed);
+      console.log(weather["windSpeed"]);
+      console.log(weather["temperature"]);
+      console.log(weather["humidity"]);
+
+      let forecast = [
+        {
+          day: "Monday",
+          temperature: 2,
+        },
+        {
+          day: "Tuesday",
+          temperature: 3,
+        },
+        {
+          day: "Wednesday",
+          temperature: 7,
+        },
+        {
+          day: "Thursday",
+          temperature: 9,
+        },
+        {
+          day: "Friday",
+          temperature: 6,
+        },
+        {
+          day: "Saturday",
+          temperature: 5,
+        },
+        {
+          day: "Sunday",
+          temperature: 10,
+        },
+      ];
+
+      console.log(forecast[3].temperature);
+      console.log(forecast[3].day);
+      console.log(
+        `The temperature for tomorrow will be ${forecast[0].temperature} degrees`
+      );
+    </script>
+  </body>
+</html>

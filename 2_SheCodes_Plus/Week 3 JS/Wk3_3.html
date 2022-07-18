@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wk3_3</title>
+  </head>
+  <body>
+    <script>
+      let country = "Guinea Bissau";
+      let city = " Sydney   ";
+      let place = "School";
+      let attraction = "Opera House";
+
+      country = country.replace("Guinea Bissau", "Guinea-Bissau");
+      city = city.trim();
+      attraction = attraction.toLowerCase();
+      place = place.toUpperCase();
+
+      console.log(country);
+      console.log(city);
+      console.log(attraction);
+      console.log(place);
+      console.log(
+        `I went to visit the ${attraction} in ${city}, right next to my ${place}. Now, I'm getting ready for my trip to ${country}!`
+      );
+    </script>
+  </body>
+</html>

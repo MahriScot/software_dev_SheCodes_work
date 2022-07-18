@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Challenges</title>
+  </head>
+
+  <body>
+    <h1>challenges</h1>
+    <p>let's get challenged!</p>
+    <script>
+      function showLocation(position) {
+        console.log(position.coords.latitude);
+        console.log(position.coords.longitude);
+      }
+
+      navigator.geolocation.getCurrentPosition(showLocation);
+
+      let apiKey = "1cea906f8f3ab268b1c4225a33a9637a";
+      let city = "edinburgh";
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?&q=${city}&appid=${apiKey}&units=metric`;
+
+      function showTemperature(response) {
+        console.log(response.data.main.temp);
+        let temperature = Math.round(response.data.main.temp);
+        let city = "edinburgh";
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = `It is ${temperature} degrees in ${city}`;
+      }
+
+      axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+    </script>
+  </body>
+</html>
