@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+h2 {
+  color: blueviolet;
+}
+
+@media (max-width: 600px) {
+  h4 {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+  }
+  h3 {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .challenge-one {
+    color: blue;
+    text-align: center;
+  }
+  .challenge-img {
+    display: none;
+  }
+}

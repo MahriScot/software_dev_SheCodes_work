@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <title>Responsive Notes_Week 3</title>
+  </head>
+  <body>
+    <h1>Lesson 1 - CSS Media Queries</h1>
+    <p>
+      e.g. When you want to center the h1 only on small resolutions (aka mobile
+      devices)
+    </p>
+    <p>
+      you can use css - text-align: center
+      <br />
+      or put CSS Queries at the top of style.css using e.g. @media (min-width:
+      400px) {apply css}
+      <br />
+      but max-width is better e.g.
+      <br />
+      @media (max-width: 600px) {
+      <br />
+      h4 { text-align: left;
+      <br />
+      color: red; } }
+<br />
+<h4>this is an h4 and it will turn red, become centered, and bigger font size, with smaller resolution</h4>
+    it's quite good to use max-width 800 or 900px as it will cover most mobile/ ipad devices, but it depends what you're doing. 
+    <br/>
+    if you want to hide something on small devices:
+<h3>
+this h3 is not super important so we might want to simply not show it on a mobile device so we can hide it in @media (max-width: 800px) {h3 {display: none;}}  
+</h3>
+you can change anything - font size, colours, etc etc etc </p>
+<p>we can also use bootstrap - obviously download the appropriate CSS bootstrap link. and in the html we can have h2 class:"d-none d-sm-block" which means it won't display your h2 unless it's bigger than `small`
+    <br/>
+    or you can have h2 class="d-block d-sm-none" which will hide what you have if the device is `small` or more
+ <br/> <br/>
+you know which order to do this in as you start with the smallest resolution option on the left (e.g d-block if you want it on your smallest resolution), and then go bigger</p>
+<h2>LESSON ONE CHALLENGE </h2>
+<h3>Challenge 1</h3>
+    <p>
+      Center the following heading and make it blue only on mobile devices (less
+      than 576px wide)
+    </p>
+    <h5 class="challenge-one">This is the heading</h5>
+
+    <h3>Challenge 2</h3>
+    <p>
+      Hide this image on mobile devices
+    </p>
+    <img src="images/logo.png" width="150" class="challenge-img"/>
+
+    <h3>Challenge 3</h3>
+    <p>
+      Import bootstrap
+    </p>
+    <h3>Challenge 4</h3>
+    <p>
+      Using Bootstrap media queries css utility classes, show the following
+      content only on small devices
+    </p>
+    <p class="d-block d-sm-none">This is a message for mobile users only</p>
+
+    <h3>Challenge 5</h3>
+    <p>
+      Using Bootstrap media queries css utility classes, show the following
+      content only on medium and larger devices
+    </p>
+    <p class="d-sm-block d-none">This is a message for desktop users only</p>
+  </body>
+</html>
