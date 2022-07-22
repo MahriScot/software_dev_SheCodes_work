@@ -1,0 +1,14 @@
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+.croissant-img {
+  max-width: 500px;
+  padding: 50px;
+}
+
+.contact {
+  text-align: center;
+}
